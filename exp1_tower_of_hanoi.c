@@ -52,6 +52,9 @@ int peek(struct Stack *stack)
     return stack->array[stack->top];
 }
 
+// Function declaration to show the movement of disks
+void moveDisksBetweenTwoPoles(struct Stack *src, struct Stack *dest, char s, char d);
+
 // Function to implement TOH_Iterative
 void tohIterative(int num_of_disks, struct Stack *src, struct Stack *aux, struct Stack *dest)
 {
